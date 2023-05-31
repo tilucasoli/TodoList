@@ -15,7 +15,7 @@ struct Checkbox: View {
 
   var body: some View {
     RoundedRectangle(cornerRadius: 4)
-      .stroke(.gray.opacity(0.5), lineWidth: 2)
+      .stroke(.gray.opacity(0.5), lineWidth: isOn ? 0 : 2)
       .frame(width: width, height: height)
       .overlay {
         ZStack {
@@ -27,9 +27,8 @@ struct Checkbox: View {
             .foregroundColor(.white)
             .frame(width: isOn ? width*0.6 : 0, height: isOn ? height*0.6 : 0)
         }
-        .animation(.easeInOut(duration: 0.1), value: isOn)
-
       }
+      .animation(.easeInOut(duration: 0.1), value: isOn)
   }
 }
 

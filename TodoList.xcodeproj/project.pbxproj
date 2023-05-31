@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03579BCA2A25640500D3AF59 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03579BC92A25640500D3AF59 /* TaskStore.swift */; };
 		03C6AB482A23C1B100D28C26 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6AB472A23C1B100D28C26 /* TodoListApp.swift */; };
 		03C6AB4A2A23C1B100D28C26 /* ShowAllTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6AB492A23C1B100D28C26 /* ShowAllTasks.swift */; };
 		03C6AB4C2A23C1B200D28C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C6AB4B2A23C1B200D28C26 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		03C6AB832A24CA7700D28C26 /* TodoTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6AB822A24CA7700D28C26 /* TodoTask.swift */; };
 		03C6AB882A24DA7D00D28C26 /* TodoSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6AB872A24DA7D00D28C26 /* TodoSection.swift */; };
 		03C6AB942A24E88000D28C26 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6AB932A24E88000D28C26 /* AddTask.swift */; };
-		03C6AB962A24E8B500D28C26 /* TodoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6AB952A24E8B500D28C26 /* TodoButton.swift */; };
 		03C6AB982A24F1D700D28C26 /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6AB972A24F1D700D28C26 /* AddTaskViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03579BC92A25640500D3AF59 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		03C6AB442A23C1B100D28C26 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C6AB472A23C1B100D28C26 /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		03C6AB492A23C1B100D28C26 /* ShowAllTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllTasks.swift; sourceTree = "<group>"; };
@@ -64,7 +61,6 @@
 		03C6AB822A24CA7700D28C26 /* TodoTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTask.swift; sourceTree = "<group>"; };
 		03C6AB872A24DA7D00D28C26 /* TodoSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSection.swift; sourceTree = "<group>"; };
 		03C6AB932A24E88000D28C26 /* AddTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
-		03C6AB952A24E8B500D28C26 /* TodoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoButton.swift; sourceTree = "<group>"; };
 		03C6AB972A24F1D700D28C26 /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,14 +89,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03579BC82A2563DE00D3AF59 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				03579BC92A25640500D3AF59 /* TaskStore.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		03C6AB3B2A23C1B100D28C26 = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +112,6 @@
 		03C6AB462A23C1B100D28C26 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
-				03579BC82A2563DE00D3AF59 /* Service */,
 				03C6AB812A24CA6700D28C26 /* Models */,
 				03C6AB7B2A24C9F900D28C26 /* Scenes */,
 				03C6AB762A23C35A00D28C26 /* UIComponents */,
@@ -167,7 +154,6 @@
 			children = (
 				03C6AB772A23C37100D28C26 /* Checkbox.swift */,
 				03C6AB792A24C65800D28C26 /* CheckableCell.swift */,
-				03C6AB952A24E8B500D28C26 /* TodoButton.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -382,11 +368,9 @@
 				03C6AB982A24F1D700D28C26 /* AddTaskViewModel.swift in Sources */,
 				03C6AB882A24DA7D00D28C26 /* TodoSection.swift in Sources */,
 				03C6AB512A23C1B200D28C26 /* Persistence.swift in Sources */,
-				03579BCA2A25640500D3AF59 /* TaskStore.swift in Sources */,
 				03C6AB832A24CA7700D28C26 /* TodoTask.swift in Sources */,
 				03C6AB4A2A23C1B100D28C26 /* ShowAllTasks.swift in Sources */,
 				03C6AB482A23C1B100D28C26 /* TodoListApp.swift in Sources */,
-				03C6AB962A24E8B500D28C26 /* TodoButton.swift in Sources */,
 				03C6AB942A24E88000D28C26 /* AddTask.swift in Sources */,
 				03C6AB542A23C1B200D28C26 /* TodoList.xcdatamodeld in Sources */,
 				03C6AB802A24CA5400D28C26 /* ShowAllTasksViewModel.swift in Sources */,

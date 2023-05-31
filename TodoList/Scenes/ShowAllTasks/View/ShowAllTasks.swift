@@ -24,15 +24,18 @@ struct ShowAllTasks: View {
           viewModel.toggleTaskCompletion(task: task)
         }
       }
+      .animation(.easeInOut(duration: 0.2), value: viewModel.tasks)
       .navigationTitle("Todo App")
       .toolbar {
         ToolbarItem(placement: .navigationBarTrailing) {
           NavigationLink {
-            AddTask(viewModel: .init(taskStore: viewModel.taskStore))
+            AddTask(viewModel: .init(tasks: viewModel.tasks)) { newTask in
+              self.viewModel.createTask(task: newTask)
+            }
           } label: {
             Image(systemName: "plus")
               .bold()
-            .foregroundColor(.blue)
+              .foregroundColor(.blue)
           }
 
         }
@@ -44,6 +47,6 @@ struct ShowAllTasks: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ShowAllTasks(viewModel: .init(taskStore: .init()))
+    ShowAllTasks(viewModel: .init(tasks: [.init(title: "teste", description: "teste")]))
   }
 }

@@ -14,7 +14,7 @@ struct TodoSection: View {
   
   @EnvironmentObject private var viewModel: ShowAllTasksViewModel
   
-  @ViewBuilder var body: some View {
+  var body: some View {
     Section(title) {
       ForEach(tasks) { task in
         CheckableCell(title: task.title,

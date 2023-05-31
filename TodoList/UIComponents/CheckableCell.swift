@@ -11,7 +11,7 @@ struct CheckableCell: View {
   let title: String
   let description: String
   
-  let isOn: Bool
+  var isOn: Bool
 
   var body: some View {
     HStack(alignment: .top, spacing: 16) {
